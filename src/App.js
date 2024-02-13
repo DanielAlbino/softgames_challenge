@@ -1,24 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Stage } from "@pixi/react";
+//import { TextScene } from "./scenes/text_scene";
+//import { CardsScene } from "./scenes/cards_scene";
+import { FireParticleScene } from "./scenes/particles_scene";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Stage options={{ backgroundColor: 0xeef1f5 }} style={{ marginLeft: 100 }}>
+     <FireParticleScene/>
+    </Stage>
   );
 }
 
